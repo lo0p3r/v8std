@@ -1,0 +1,8 @@
+﻿<div>
+	<h1 id="section_%1" style="margin-top:0pt; margin-bottom:12.05pt; page-break-inside:auto; page-break-after:auto">
+		<span><a href="#_content">%2 ^ </a></span>
+		<span> </span>
+		<span><a href="%4">(открыть на ИТС)</a>
+	</h1>
+	%3
+</div>

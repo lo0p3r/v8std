@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="95"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="92">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="АдресСтандартов" id="102">
+							<DataPath>АдресСтандартов</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="АдресСтандартовКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="АдресСтандартовРасширеннаяПодсказка" id="104"/>
+						</InputField>
+						<Button name="АнализРекурсивно" id="85">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.АнализРекурсивно</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Анализ сайта</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="АнализРекурсивноРасширеннаяПодсказка" id="86"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ДеревоСтандартов" id="63">
+					<Representation>Tree</Representation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<AutoMaxRowsCount>false</AutoMaxRowsCount>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ДеревоСтандартов</DataPath>
+					<ContextMenu name="ДеревоСтандартовКонтекстноеМеню" id="64"/>
+					<AutoCommandBar name="ДеревоСтандартовКоманднаяПанель" id="65">
+						<ChildItems>
+							<ButtonGroup name="ДеревоСтандартовГруппаСнятьУстановитьФлажки" id="122">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дерево стандартов группа снять установить флажки</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дерево стандартов группа снять установить флажки</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Representation>Compact</Representation>
+								<ExtendedTooltip name="ДеревоСтандартовГруппаСнятьУстановитьФлажкиРасширеннаяПодсказка" id="123"/>
+								<ChildItems>
+									<Button name="ДеревоСтандартовУстановитьФлажки" id="120">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьФлажки</CommandName>
+										<ExtendedTooltip name="ДеревоСтандартовУстановитьФлажкиРасширеннаяПодсказка" id="121"/>
+									</Button>
+									<Button name="ДеревоСтандартовСнятьФлажки" id="118">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьФлажки</CommandName>
+										<ExtendedTooltip name="ДеревоСтандартовСнятьФлажкиРасширеннаяПодсказка" id="119"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="ДеревоСтандартовСохранитьЗагрузитьФайл" id="124">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дерево стандартов сохранить загрузить файл</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дерево стандартов сохранить загрузить файл</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Representation>Compact</Representation>
+								<ExtendedTooltip name="ДеревоСтандартовСохранитьЗагрузитьФайлРасширеннаяПодсказка" id="125"/>
+								<ChildItems>
+									<Button name="ДеревоСтандартовСохранитьВФайл" id="109">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СохранитьВФайл</CommandName>
+										<ExtendedTooltip name="ДеревоСтандартовСохранитьВФайлРасширеннаяПодсказка" id="110"/>
+									</Button>
+									<Button name="ДеревоСтандартовЗагрузитьИзФайла" id="107">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+										<ExtendedTooltip name="ДеревоСтандартовЗагрузитьИзФайлаРасширеннаяПодсказка" id="108"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДеревоСтандартовРасширеннаяПодсказка" id="66"/>
+					<SearchStringAddition name="ДеревоСтандартовСтрокаПоиска" id="67">
+						<AdditionSource>
+							<Item>ДеревоСтандартов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДеревоСтандартовСтрокаПоискаКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="ДеревоСтандартовСтрокаПоискаРасширеннаяПодсказка" id="69"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДеревоСтандартовСостояниеПросмотра" id="70">
+						<AdditionSource>
+							<Item>ДеревоСтандартов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДеревоСтандартовСостояниеПросмотраКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ДеревоСтандартовСостояниеПросмотраРасширеннаяПодсказка" id="72"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДеревоСтандартовУправлениеПоиском" id="73">
+						<AdditionSource>
+							<Item>ДеревоСтандартов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДеревоСтандартовУправлениеПоискомКонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="ДеревоСтандартовУправлениеПоискомРасширеннаяПодсказка" id="75"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">ДеревоСтандартовПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="ДеревоСтандартовОбработано" id="76">
+							<DataPath>ДеревоСтандартов.СтандартОбработан</DataPath>
+							<Visible>false</Visible>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДеревоСтандартовОбработаноКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ДеревоСтандартовОбработаноРасширеннаяПодсказка" id="78"/>
+							<Events>
+								<Event name="OnChange">ДеревоСтандартовОбработаноПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ДеревоСтандартовЗаголовок" id="79">
+							<DataPath>ДеревоСтандартов.Заголовок</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоСтандартовЗаголовокКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ДеревоСтандартовЗаголовокРасширеннаяПодсказка" id="81"/>
+						</InputField>
+						<InputField name="ДеревоСтандартовАдрес" id="82">
+							<DataPath>ДеревоСтандартов.Адрес</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоСтандартовАдресКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="ДеревоСтандартовАдресРасширеннаяПодсказка" id="84"/>
+						</InputField>
+						<InputField name="ДеревоСтандартовКонечныйАдрес" id="96">
+							<DataPath>ДеревоСтандартов.КонечныйАдрес</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Конечный адрес</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоСтандартовКонечныйАдресКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ДеревоСтандартовКонечныйАдресРасширеннаяПодсказка" id="98"/>
+						</InputField>
+						<InputField name="ДеревоСтандартовНомерПоПорядку" id="126">
+							<DataPath>ДеревоСтандартов.НомерПоПорядку</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоСтандартовНомерПоПорядкуКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="ДеревоСтандартовНомерПоПорядкуРасширеннаяПодсказка" id="128"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<HTMLDocumentField name="ДокументHTML" id="99">
+			<DataPath>ДокументHTML</DataPath>
+			<Width>5</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<ContextMenu name="ДокументHTMLКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="ДокументHTMLРасширеннаяПодсказка" id="101"/>
+		</HTMLDocumentField>
+		<UsualGroup name="Группа2" id="116">
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="117"/>
+			<ChildItems>
+				<CheckBoxField name="ТолькоСоздаватьНовые" id="113">
+					<DataPath>ТолькоСоздаватьНовые</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТолькоСоздаватьНовыеКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ТолькоСоздаватьНовыеРасширеннаяПодсказка" id="115"/>
+				</CheckBoxField>
+				<Button name="АктуализироватьСтандартыСППР" id="111">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.АктуализироватьСтандартыСППР</CommandName>
+					<ExtendedTooltip name="АктуализироватьСтандартыСППРРасширеннаяПодсказка" id="112"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаСтандартов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоСтандартов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево стандартов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СтандартОбработан" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стандарт обработан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Заголовок" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>127</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Адрес" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>127</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонечныйАдрес" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>127</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодСтандарта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код стандарта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>9</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерПоПорядку" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер по порядку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КоличествоЭлементовДляПрерывания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество элементов для прерывания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументHTML" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСтандартов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес стандартов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>127</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоСоздаватьНовые" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только создавать новые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="АнализРекурсивно" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ рекурсивно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ рекурсивно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Анализ</Action>
+		</Command>
+		<Command name="СохранитьВФайл" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьВФайл</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="АктуализироватьСтандартыСППР" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуализировать стандарты СППР</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуализировать стандарты СППР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АктуализироватьСтандартыСППР</Action>
+		</Command>
+		<Command name="УстановитьФлажки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+		</Command>
+		<Command name="СнятьФлажки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+		</Command>
+	</Commands>
+</Form>

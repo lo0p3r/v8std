@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<HTML>
+	<TITLE>Система стандартов и методик разработки конфигураций для платформы 1С:Предприятие 8</TITLE>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<META http-equiv="Content-Style-Type" content="text/css"/>
+	<STYLE type="text/css">
+	</STYLE>
+	<BODY>
+		<NAV>
+			<h1 id="_content"><a href="https://its.1c.ru/db/v8std">Система стандартов и методик разработки конфигураций для платформы 1С:Предприятие 8 (перейти на ИТС)</a></h1>
+			_NAVIGATION_
+		</NAV>
+		<p style="page-break-after: always;"> </p>
+		<p style="page-break-before: always;"> </p>
+		_MAIN_BODY_
+	</BODY>
+</HTML>
