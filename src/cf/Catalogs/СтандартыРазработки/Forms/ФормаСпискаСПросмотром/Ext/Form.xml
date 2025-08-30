@@ -11,7 +11,7 @@
 			<Button name="ФормаОбновить" id="56">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
-				<CommandName>0</CommandName>
+				<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="57"/>
 			</Button>
@@ -19,7 +19,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
