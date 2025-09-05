@@ -1,0 +1,5 @@
+language: "ru-RU"
+
+reviews:
+  sequence_diagrams: false
+  poem: false
