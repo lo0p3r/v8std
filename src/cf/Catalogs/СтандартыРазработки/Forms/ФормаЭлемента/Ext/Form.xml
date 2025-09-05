@@ -16,9 +16,22 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа1" id="31">
+		<UsualGroup name="ГруппаОсновное" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основное</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="32"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаШапка" id="33">
 					<Title>
@@ -37,13 +50,6 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="34"/>
 					<ChildItems>
-						<InputField name="Код" id="1">
-							<DataPath>Объект.Code</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-						</InputField>
 						<InputField name="КодСтандарта" id="22">
 							<DataPath>Объект.КодСтандарта</DataPath>
 							<EditMode>EnterOnInput</EditMode>
