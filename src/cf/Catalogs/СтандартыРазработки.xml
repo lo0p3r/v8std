@@ -596,7 +596,7 @@
 							<v8:content>Номер по порядку</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Для сортировки в порядке как на сайте</Comment>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -627,7 +627,7 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForFolderAndItem</Use>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
