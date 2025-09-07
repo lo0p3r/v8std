@@ -596,7 +596,7 @@
 							<v8:content>Номер по порядку</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Для сортировки в порядке как на сайте</Comment>
+					<Comment>Для сортировки в порядке как на сайте ИТС</Comment>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
