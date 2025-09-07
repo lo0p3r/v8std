@@ -26,7 +26,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа основное</v8:content>
+					<v8:content>Основное</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
@@ -104,7 +104,7 @@
 							<WarningOnEdit>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Необходима внимательность при редактировании этого поле</v8:content>
+									<v8:content>Необходима внимательность при редактировании этого поля</v8:content>
 								</v8:item>
 							</WarningOnEdit>
 							<EditMode>EnterOnInput</EditMode>
@@ -186,30 +186,4 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="РедактироватьТекстСтандарта" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Редактировать текст стандарта</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Редактировать текст стандарта</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Use>
-				<xr:Common>true</xr:Common>
-				<xr:Value name="Role.ТолькоПросмотр">false</xr:Value>
-			</Use>
-			<Picture>
-				<xr:Ref>StdPicture.Change</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>РедактироватьТекстСтандарта</Action>
-			<Representation>TextPicture</Representation>
-		</Command>
-	</Commands>
 </Form>
