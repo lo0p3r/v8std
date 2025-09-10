@@ -4,6 +4,9 @@
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<META http-equiv="Content-Style-Type" content="text/css"/>
 	<STYLE type="text/css">
+		html {font-family: 'Helvetica', arial, sans-serif; font-size: _FONT_SIZE_px;}
+		h1 {font-size: 1.5rem;}
+		p {font-size: 1rem;}
 	</STYLE>
 	<BODY>
 		<NAV>
