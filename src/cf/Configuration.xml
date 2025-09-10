@@ -268,6 +268,7 @@
 			<CommonCommand>РедактироватьСтандартHTML</CommonCommand>
 			<Constant>ПутьКHTMLРедактору</Constant>
 			<Constant>ПутьКwkhtmltopdf</Constant>
+			<Constant>РазмерШрифта</Constant>
 			<CommonForm>РедакторHTML</CommonForm>
 			<Catalog>СтандартыРазработки</Catalog>
 			<DataProcessor>ЗагрузкаСтандартов</DataProcessor>

@@ -28,6 +28,7 @@
 			<ChildItems>
 				<InputField name="РазмерШрифта" id="34">
 					<DataPath>РазмерШрифта</DataPath>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
 					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="РазмерШрифтаКонтекстноеМеню" id="35"/>
@@ -261,13 +262,13 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Размер шрифта</v8:content>
+					<v8:content>Размер шрифта (px)</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>3</v8:Digits>
+					<v8:Digits>2</v8:Digits>
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
