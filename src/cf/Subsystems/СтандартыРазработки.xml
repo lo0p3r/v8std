@@ -35,6 +35,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РедакторHTML</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.SunEditorHTML</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.wkhtmltopdf</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РазмерШрифта</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
