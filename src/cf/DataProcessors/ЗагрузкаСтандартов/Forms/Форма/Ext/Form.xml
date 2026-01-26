@@ -26,6 +26,7 @@
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="95"/>
 			<ChildItems>
 				<UsualGroup name="Группа1" id="92">
+					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="93"/>
@@ -43,11 +44,37 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Анализ сайта</v8:content>
+									<v8:content>1. Анализ сайта</v8:content>
 								</v8:item>
 							</Title>
 							<ExtendedTooltip name="АнализРекурсивноРасширеннаяПодсказка" id="86"/>
 						</Button>
+						<UsualGroup name="Группа2" id="116">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="117"/>
+							<ChildItems>
+								<CheckBoxField name="ТолькоСоздаватьНовые" id="113">
+									<DataPath>ТолькоСоздаватьНовые</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТолькоСоздаватьНовыеКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ТолькоСоздаватьНовыеРасширеннаяПодсказка" id="115"/>
+								</CheckBoxField>
+								<Button name="АктуализироватьСтандартыСППР" id="111">
+									<Type>UsualButton</Type>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.АктуализироватьСтандартыСППР</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>2. Актуализировать стандарты</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="АктуализироватьСтандартыСППРРасширеннаяПодсказка" id="112"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<Table name="ДеревоСтандартов" id="63">
@@ -210,26 +237,6 @@
 			<ContextMenu name="ДокументHTMLКонтекстноеМеню" id="100"/>
 			<ExtendedTooltip name="ДокументHTMLРасширеннаяПодсказка" id="101"/>
 		</HTMLDocumentField>
-		<UsualGroup name="Группа2" id="116">
-			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="117"/>
-			<ChildItems>
-				<CheckBoxField name="ТолькоСоздаватьНовые" id="113">
-					<DataPath>ТолькоСоздаватьНовые</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ТолькоСоздаватьНовыеКонтекстноеМеню" id="114"/>
-					<ExtendedTooltip name="ТолькоСоздаватьНовыеРасширеннаяПодсказка" id="115"/>
-				</CheckBoxField>
-				<Button name="АктуализироватьСтандартыСППР" id="111">
-					<Type>UsualButton</Type>
-					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-					<CommandName>Form.Command.АктуализироватьСтандартыСППР</CommandName>
-					<ExtendedTooltip name="АктуализироватьСтандартыСППРРасширеннаяПодсказка" id="112"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
