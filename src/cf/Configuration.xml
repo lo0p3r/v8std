@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
 			</DefaultRoles>
 			<Vendor>github.com/lo0p3r</Vendor>
-			<Version>1.5</Version>
+			<Version>1.6</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -253,6 +253,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>СтандартыРазработки</Subsystem>
+			<Subsystem>СтандартныеПодсистемы</Subsystem>
 			<StyleItem>СтандартНеИспользуется</StyleItem>
 			<CommonPicture>ИконкаPDF</CommonPicture>
 			<Role>ПолныеПрава</Role>
@@ -265,6 +266,10 @@
 			<CommonModule>РаботаСHTMLКлиентСервер</CommonModule>
 			<CommonModule>РаботаСPDF</CommonModule>
 			<CommonModule>РаботаСОкнамиКлиент</CommonModule>
+			<CommonModule>ПолнотекстовыйПоискСервер</CommonModule>
+			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<ScheduledJob>ОбновлениеИндексаППД</ScheduledJob>
+			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
 			<CommonCommand>РедактироватьСтандартHTML</CommonCommand>
 			<Constant>ПутьКHTMLРедактору</Constant>
 			<Constant>ПутьКwkhtmltopdf</Constant>
